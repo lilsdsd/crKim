@@ -1,142 +1,172 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>The Perfect Musicians In The World!</title>
-      <style>
-          img {width:100%;}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Perfect Musicians In The World!</title>
+  <style>
+      img {width:100%;}
 
-          body {background-color: white; 
-                display: grid; 
+      body {background-color: white; 
+            display: grid; 
+      }
 
-          }
+      #wrap {width:942px; margin: 0 auto;}
 
-          #wrap {width:942px; margin: 0 auto;}
+      #navi {
+            width:100%;
+            height:70px;
+            text-align: center;
+            margin: 50px;}
+      #NT   {
+            color: black;
+            font-size: 40px;
+            font-family: helvetica;
+            text-align: center;}
 
-          #nav {width:942px; text-align:left;}
+      a {
+        color: black;
+        text-decoration: none;}
 
-          #nav-02 {width:942px; text-align:right; font-family: helvetica}
+      #Nwrap {display: flex;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              align-items: center;
+              text-align: center;
+              margin: 20px;
+              font-family: 'Helvetica Neue', sans-serif;
+              font-size: 20px}
 
-          #header {color: black; font-size: 90px; font-family: helvetica; text-align: center;}
+      #nav-02 {width:942px;
+              text-align:right;
+              font-family: helvetica}
 
-          #main {width:942px; text-align:center;} 
+      #header {color: black;
+              font-size: 90px;
+              font-family: helvetica;
+              text-align: center;
+              padding: 20px;}
 
-          .img {
-            display: flex;
-            position: relative;
-            height: 500px; /* Ensure enough height to see the images */
+      #main {
+            text-align:center;
             justify-content: center;
-            align-items: center;
-            background-color : transparent;
-          }
+            align-items: center;} 
 
-          .hover-box {
-            width: 300px; /* Adjusted to fit in the container */
-            height:300px;
-            justify-content: center;
-            cursor: pointer;
-            position: absolute;
-            display: flex;
-            transition: transform 0.3s ease, z-index 0s;
-          }
+      .img {
+        display: flex;
+        position: relative;
+        height: 500px; 
+        justify-content: center;
+        align-items: center;
+        background-color : transparent;
+        margin: 0 auto;
+      }
 
-          .hover-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+      .hover-box {
+        width: 300px; 
+        height:300px;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        display: flex;
+        transition: transform 0.3s ease, z-index 0s;
+      }
 
-      </style>
-    </head>
-    <body>
-      <div id="wrap">
-        <div id="nav">
-          <p>Lorem ipsum</p>
-        </div>
+      .hover-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+      
+    <div id="navi">
+    <div id="NT"><a href="https://mainpage.com"></a></div>
+    <div id="Nwrap">
+    <div id="NWham">
+    <a href="https://alishajang0702.github.io/musician_wham/wham.html" onmouseover="changeText(this, 'MYOUNGIN');"  onmouseout="changeText(this, 'Wham!');">Wham!</a>
+    </div>
+    <div id="NNIRVANA">
+    <a href="https://alishajang0702.github.io/onerepublic/onerepublic.html" onmouseover="changeText(this, 'HYOJU');"  onmouseout="changeText(this, 'NIRVANA');">NIRVANA</a>
+    </div>
+    <div id="NBeatles">
+    <a href="https://alishajang0702.github.io/Beatles/the%20beatles.html" onmouseover="changeText(this, 'MUBIN');"  onmouseout="changeText(this, 'The Beatles');">The Beatles</a>
+    </div>
+    <div id="NMT">
+    <a href="https://lilsdsd.github.io/crKimPersonalPage/" onmouseover="changeText(this, 'CHAERIN');"  onmouseout="changeText(this, 'Modern Talking');">Modern Talking</a>
+    </div>
+    </div>
+    </div>
 
-        <div id="nav-02">
-          <p> Lorem ipsum</p>
-        </div>
+    </div>
 
-        <div id="header">
-          <header>The Perfect Musicians In The World!</header>
-        </div>
+    <div id="header">
+      <header>The Perfect Musicians <br> In The World!</header>
+    </div>
 
-        <div id="main">
-          <h2> Choose the CD you want to listen to!</h2>
-          <div class="img">
-            <a href ="https://typelist.upstatement.com/" class="hover-box" style="z-index:1; left: 0vh;">
-              <img src="https://i.imgur.com/Tl2EP5n.png" alt="Out of border">
-              WHAM!
-            </a>
-            
-            <a href ="링크" class="hover-box" style="z-index:2; left: 5vh;">
-              <h3> ONE REPUBLIC </h3>
-              <img src="https://i.imgur.com/hmtvVDC.png" alt="Out of border">
-            </a>
-            
-            <a href ="링크" class="hover-box" style="z-index:3; left: 30vh;">
-              <img src="https://i.imgur.com/TWzhrof.png" alt="Out of border">
-              MODERN TALKING
-            </a>
-            
-            <a href="링크" class="hover-box" style="z-index:4; left: 46vh;">
-               <img src="https://i.imgur.com/XRznSRV.png" alt="Out of border">
-               THE BEATLES
-            </a>
-               
-            <div class="hover-box" style="z-index:5; left: 58vh;">
-               <img src="https://i.imgur.com/Yg2vzG8.png" alt="Out of border">
-            </div>
-              
-            <div class="hover-box" style="z-index:6; left: 74vh;">
-               <img src="https://i.imgur.com/XbjaJSg.png" alt="Out of border">
-            </div>
-            
-             <div class="hover-box" style="z-index:7; left: 90vh;">
-               <img src="https://i.imgur.com/hmtvVDC.png" alt="Out of border">
-            </div>
-            
-        </div>
+    <div id="main">
+      <h2> Choose the CD you want to listen to!</h2>
+      <div class="img">
+        <a href="https://alishajang0702.github.io/musician_wham/wham.html" class="hover-box" style="z-index:1; left: 10vh;">
+          <img src="https://i.imgur.com/NKpPCwS.png" alt="Out of border">
+        </a>
 
+        <a href="//" class="hover-box" style="z-index:2; left: 30vh;">
+          <img src="https://i.imgur.com/TWzhrof.png" alt="Out of border">
+        </a>
+        <a href="https://alishajang0702.github.io/onerepublic/onerepublic.html" class="hover-box" style="z-index:3; left: 50vh;">
+          <img src="https://i.imgur.com/pbQrJkL.png" alt="Out of border">
+        </a>
 
+        <a href="//" class="hover-box" style="z-index:4; left: 70vh;">
+          <img src="https://i.imgur.com/XRznSRV.png" alt="Out of border">
+        </a>
 
+        <a href="https://alishajang0702.github.io/Beatles/the%20beatles.html" class="hover-box" style="z-index:5; left: 90vh;">
+          <img src="https://i.imgur.com/eK9t1yV.png" alt="Out of border">
+        </a>
 
-          </div>
-        </div>
+        <a href="//" class="hover-box" style="z-index:6; left: 110vh;">
+          <img src="https://i.imgur.com/XbjaJSg.png" alt="Out of border">
+        </a>
+
+        <a href="https://lilsdsd.github.io/crKimPersonalPage/" class="hover-box" style="z-index:7; left: 130vh;">
+          <img src="https://i.imgur.com/MBWSUcR.png" alt="Out of border">
+        </a>
       </div>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hoverBoxes = document.querySelectorAll('.hover-box');
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hoverBoxes = document.querySelectorAll('.hover-box');
 
-            hoverBoxes.forEach(hoverBox => {
-                let isHovering = false;
-                let angle = 0;
+        hoverBoxes.forEach(hoverBox => {
+            let isHovering = false;
+            let angle = 0;
 
-                function rotate() {
-                    if (isHovering) {
-                        angle += 1; // Adjust the value to control the speed of rotation
-                        hoverBox.style.transform = `translateY(-50px) rotate(${angle}deg)`;
-                        requestAnimationFrame(rotate);
-                    }
+            function rotate() {
+                if (isHovering) {
+                    angle += 1; 
+                    hoverBox.style.transform = `translateY(-50px) rotate(${angle}deg)`;
+                    requestAnimationFrame(rotate);
                 }
+            }
 
-                hoverBox.addEventListener('mouseenter', function() {
-                    isHovering = true;
-                    hoverBox.style.zIndex = 10; // Bring to front on hover
-                    rotate();
-                });
-              
-               
+            hoverBox.addEventListener('mouseenter', function() {
+                isHovering = true;
+                hoverBox.style.zIndex = 10; 
+                rotate();
+            });
 
-                hoverBox.addEventListener('mouseleave', function() {
-                    isHovering = false;
-                    hoverBox.style.zIndex = 1; // Reset z-index
-                    hoverBox.style.transform = 'translateY(0) rotate(0deg)';
-                });
+            hoverBox.addEventListener('mouseleave', function() {
+                isHovering = false;
+                hoverBox.style.zIndex = 1; 
+                hoverBox.style.transform = 'translateY(0) rotate(0deg)';
             });
         });
-      </script>
-    </body>
-    </html>
+    });
+  </script>
+</body>
+</html>
